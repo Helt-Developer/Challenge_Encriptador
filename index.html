@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encriptador.css">
+    
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes_Encriptador/Logo.svg" alt="logo-alura" id="logo-alura">
+        </div>
+    </header>
+    
+    <main>
+        <div>
+            
+            <input type="text" name="texto" id="entrada-texto" 
+                placeholder="Ingrese texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)">
+                
+            
+        </div>
+        <section>
+            <div class="cuadro-imagen">
+                <img src="Imagenes_Encriptador/Muñeco.svg" alt="munieco" id="imagen-cuadro">
+                <textarea name="salida-mensaje" id="salida-mensaje" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado."></textarea>
+                <button id="copiar">Copiar</button> 
+            </div>
+        </section>
+        <section>
+            <div>
+                <label for="texto" id="observacion">&#33 Solo letras minúsculas, sin acento</label>  
+                <button type="button" class="boton" id="boton-encriptar">Encriptar</button>
+                <button type="button" class="boton-1" id="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+</html>
